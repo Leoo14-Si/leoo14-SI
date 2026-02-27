@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #ff7613;
+    --text-color : #727171;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family:  'inter', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color : white;
+
+}
+
+.description{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.item_pretitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.item_title{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+.profile{
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+
+}
+
+.group1,
+.group2{
+    display: flex;
+    flex-direction:column ;
+    gap: 5rem;
+}
+
+.group3{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.group3>div{
+    flex: 1;
+}
+
+/*profile*/
+
+.profile_container{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    
+}
+.profile_img{
+    max-width: 250px
+}
+.profile_name_firstName{
+    color: white;
+    font-size: 200;
+    font-size:clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+
+.profile_name_lastName{
+    color: var(--primary-color);
+    font-weight:700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+
+.profile_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.download_button{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.download_button:hover{
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px){
+    .profile_container{
+        flex-direction: column;
+    }
+}
+
+.skill_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+.reference{
+    margin-top: 2rem;
+
+}
+
+.reference_name{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.edu_item{
+    margin-top: 2rem;
+
+}
+
+.certification.item{
+    margin-top: 2rem;
+}
+
+.exp_item{
+    margin-top: 2rem;
+}
+
+.awards_item{
+    margin-top: 2rem;
+}
+
+.interest_item{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.interest_item{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.interest_item svg{
+    width: 2rem;
+}
+
+.social_item   {
+    margin-top: 2rem;
+}
+
+.social_item{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: .5rem ;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-color);
+}
+
+.social_item :hover{
+    color: var(--primary-color);
+}
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="profile">
+                <div class="profile_container">
+                    <div class="profile_img">
+                        <img src="./Jefry_SIAM.png" alt="M. Jefry Leonardi" style="border-radius: 50%;">
+                    </div>
+                    <div>
+                        <h1 class = "Name">
+                            <span class = "profile_name_firstName">M. Jefry</span>
+                        <span class="profile_name_lastName"> Leonardi</span>
+                        </h1>
+                        <p class = " profile_title">
+                            SISTEM INFORMASI
+                        </p>
+                        <p class = " description">
+                            Mahasiswa semester 1 jurusan Sistem Informasi yang memiliki minat dalam menjadi pemimpin
+yang baik. Bersemangat untuk terus belajar, menghadapi tantangan baru dan berkontribusi aktif
+dalam lingkungan kampus
+                        </p>
+                        <a class = " download_button" href="/PW02. Arsitektur dan Protokol HTTP.pdf"
+                        download=" resume.pdf"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="group1">
+                <div class="skills">
+                    <h3 class = "title">Expertise</h3>
+                    <ul class ="skill_list description">
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="reference">
+                    <h3 class = "title">Reference</h3>
+                    <div class="ref_item">
+                        <h4 class = "reference_name">Brawijaya University</h4>
+                        <p class = "description">Universitas Brawijaya is one of the leading universities in Indonesia
+                            with more than 60,000 students in various degrees ranging from the Diploma Program, Bachelor’s
+                            Degree Program, Master’s Degree Program, Doctoral Degree Program, and Medical Specialist Program,
+                            in 12 Faculties, 2 faculty-level Programs, 1 Vocational Program, and 1 Postgraduate Program</p>
+                    </div>
+                    <div class="education">
+                        <h3 class = " title">Education</h3>
+                        <div class="edu_item">
+                            <p class = "item_pretitle">2025</p>
+                            <h4 class=" item_title">Sistem Informasi in UB</h4>
+                            <p class ="item_subtitle">
+                                Brawijaya Uni
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group2">
+                <div class="exp">
+                    <h3 class = "title">Experience</h3>
+                    <div class = "exp_item">
+                    <p class = "item_pretitle">OSMIB (Organisasi Siswa Ma’had Ibnu Hajar)</p>
+                    <h4 class = item_title>Sekretaris</h4>
+                    <p class = "item_subtitle">Menyusun arsip surat masuk dan keluar.
+                    ● Menulis surat undangan rapat, surat pemberitahuan, atau surat permohonan dana.
+                    ● Menyusun laporan bulanan/triwulan untuk pembina OSIS.
+                    ● Membuat rekap kegiatan OSIS dalam 1 periode kepengurusan.</p>
+                    </div>
+                </div>
+                <div class="awards">
+                    <h3 class = title>Awards</h3>
+                    <div class="awards_item">
+                    <p class = "item_pretitle">OSK BIologi</p>
+                    <h4 class = "item_title">Kota Depok</h4>
+                    <p class = description>olimpiade sains bergengsi dan terbesar untuk tingkat SD/MI yang terbuka bagi semua siswa/i dan dilaksanakan secara serentak Nasional</p>
+                    </div>
+                </div>
+                <div class="interest">
+                    <h3 class = "title">Interest</h3>
+                        <div class="interest_items">
+                            <div class="interest_items">
+                                <i data-feather="book"></i>
+                                <span>Learning</span>
+                            <div class="interest_items">
+                                <i data-feather="music"></i>
+                                <span>music</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+            <div class="group3">
+                <div class="contact">
+                    <h3 class = "title">Contact</h3>
+                    <div class="contact_info">
+                        <p class = "description">m.jefry.leonardi@gmail.com</p>
+                        <p class = "description">+62 813 7717 9999</p>
+                        <p class = "description">Line : @leonardi_jefry</p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <h3 class ="title">Socials</h3>
+                    <div class="socials_items">
+                    <a href="https://github.com/Leoo14-Si" class = "social_item"><i data-feather="github"></i>
+                        <span>M. Jefry Leonardi</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/m-jefry-leonardi-a2b316373/" class = "social_item"><i data-feather="linkedin"></i>
+                        <span>M. Jefry Leonardi</span>
+                    </a>
+                    <a href="https://www.instagram.com/leonardijefry/" class = "social_item"><i data-feather="instagram"></i>
+                        <span>M. Jefry Leonardi</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+    feather.replace();
+    </script>
+
+</body>
+</html>
